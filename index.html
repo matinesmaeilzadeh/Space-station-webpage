@@ -3,10 +3,50 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        
+        <title>Space station</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Inter:wght@400;500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            inter: ['Inter', 'sans-serif'],
+                            public: ['Public Sans', 'sans-serif'],
+                            mono: ['DM Mono', 'monospace'],
+                        }
+                    }
+                }
+            }
+        </script>
     </head>
     <body>
+        <header class="bg-black w-[100%] h-[4rem]">
+            
+        </header>
+
+        <main>
+            <section class="relative flex items-center justify-center bg-black w-full h-[45rem]">
+                <img src="assets/image/International-Space-Station.jpg" alt="International-Space-Station" class="absolute h-[45rem] object-cover">
+
+                <div class="absolute opacity-45 bg-black w-full h-[45rem]"></div>
+
+                <div class="absolute flex flex-col justify-center text-center">
+                    <h1 class="text-white text-7xl font-inter font-bold">
+                        International <br/> Space Station
+                    </h1>
+
+                    <p class="text-white mt-[2rem] text-xl font-public">
+                        A Home for Science Beyond Earth
+                    </p>
+                </div>
+            </section>
+        </main>
         
     </body>
 </html>
+
+
