@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth select-none">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,9 +24,9 @@
         </script>
     </head>
     <body>
-        <header class="fixed z-1000 bg-black w-full h-[5rem]">
-            <nav class="flex items-center justify-center gap-[4rem] bg-black w-full h-[5rem] text-white">
-                <a href="# ">Home</a>
+        <header class="fixed z-1000 bg-black w-full h-[5rem] font-inter">
+            <nav class="hidden md:flex items-center justify-center gap-[4rem] w-full h-[5rem] text-white">
+                <a href="#Home">Home</a>
     
                 <a href="#About">About</a>
     
@@ -34,80 +34,84 @@
     
                 <a href="#Gallery">Gallery</a>
             </nav>
+
+            <p class="md:hidden flex items-center justify-center w-full h-[5rem] text-white">
+                Space station
+            </p>
         </header>
 
         <main>
             <span id="Home"></span>
-            <section class="relative flex items-center justify-center bg-black w-full h-[45rem]">
-                <img src="assets/image/International-Space-Station.jpg" alt="International-Space-Station" class="absolute h-[45rem] object-cover">
+            <section class="relative flex items-center justify-center bg-black w-full h-[30rem] md:h-[45rem]">
+                <img src="assets/image/International-Space-Station.jpg" alt="International-Space-Station" class="absolute h-[30rem] md:h-[45rem] object-cover">
 
-                <div class="absolute opacity-45 bg-black w-full h-[45rem]"></div>
+                <div class="absolute opacity-45 bg-black w-full h-[30rem] md:h-[45rem]"></div>
 
                 <div class="absolute flex flex-col justify-center text-center">
-                    <h1 class="text-white text-7xl font-inter font-bold">
+                    <h1 class="text-white text-4xl md:text-7xl font-inter font-bold">
                         International <br/> Space Station
                     </h1>
 
-                    <p class="text-white mt-[2rem] text-xl font-public">
+                    <p class="text-white mt-[2rem] text-xs md:text-xl font-public">
                         A Home for Science Beyond Earth
                     </p>
                 </div>
             </section>
             
             <span id="About"></span>
-            <section class="flex items-center justify-around w-full h-[35rem]">
-                <div class="flex flex-col gap-y-[4rem] w-[40rem]">
-                    <h2 class="text-5xl font-inter font-bold leading-[4rem]">
+            <section class="flex flex-col lg:flex-row items-center justify-around gap-y-10 lg:gap-y-0 w-full min-h-[35rem] px-[2rem] lg:px-[2.5rem] py-[2.5rem]">
+                <div class="flex flex-col gap-y-[2rem] lg:gap-y-[4rem] w-full lg:w-[40rem] mt-[2rem]">
+                    <h2 class="text-3xl xl:text-5xl font-inter font-bold leading-tight lg:leading-[3rem]">
                         International Space <br> Station 2026 Calendar
                     </h2>
     
-                    <p class="text-[1rem] font-public">
+                    <p class="text-sm sm:text-base font-public leading-6">
                         Twenty-five years ago, humanity launched a bold endeavor: to live and work together in space, not for a fleeting time, but continuously. What began as a fragile framework of modules has since grown into the most enduring platform for international cooperation in orbit — the International Space Station.
                     </p>
                 </div>
 
-                <img src="assets/image/International-Space-Station-2026-Calendar.jpg" alt="International-Space-Station-2026-Calendar" class="w-[47rem] h-[25rem]">
+                <img src="assets/image/International-Space-Station-2026-Calendar.jpg" alt="International-Space-Station-2026-Calendar" class="w-full sm:w-[90%] lg:w-[47rem] h-auto lg:h-[25rem] object-cover rounded-[5px]">
             </section>
 
-            <section class="flex items-center justify-around w-full h-[35rem]">
-                <div class="flex flex-col gap-y-[4rem] w-[40rem]">
-                    <h2 class="text-5xl font-inter font-bold leading-[4rem]">
+            <section class="flex flex-col lg:flex-row items-center justify-around gap-y-10 lg:gap-y-0 w-full min-h-[35rem] px-[2rem] lg:px-[2.5rem] py-[2.5rem]">
+                <div class="flex flex-col gap-y-[2rem] lg:gap-y-[4rem] w-full lg:w-[40rem] mt-[2rem]">
+                    <h2 class="text-3xl xl:text-5xl font-inter font-bold leading-tight lg:leading-[3rem]">
                         About the International <br> Space Station
                     </h2>
     
                     <div>
-                        <p class="text-[1rem] font-public font-bold">
+                        <p class="text-sm sm:text-base font-bold font-public leading-6">
                             The station was designed between 1984 and 1993. Elements of the station were in construction throughout the US, Canada, Japan, and Europe beginning in the late 1980s.
                         </p>
-                        <p class="text-[1rem] font-public mt-[1rem]">
+                        <p class="text-sm sm:text-base font-public leading-6">
                             The International Space Station Program brings together international flight crews, multiple launch vehicles, globally distributed launch and flight operations, training, engineering, and development facilities, communications networks, and the international scientific research community.
                         </p>
                     </div>
                 </div>
 
-                <img src="assets/image/About-the-International-Space-Station.jpg" alt="About-the-International-Space-Station" class="w-[47rem] h-[25rem]">
+                <img src="assets/image/About-the-International-Space-Station.jpg" alt="About-the-International-Space-Station" class="w-full sm:w-[90%] lg:w-[47rem] h-auto lg:h-[25rem] object-cover rounded-[5px]">
             </section>
 
-            <section class="flex items-center justify-around w-full h-[35rem]">
-                <div class="flex flex-col gap-y-[4rem] w-[40rem]">
-                    <h2 class="text-5xl font-inter font-bold leading-[4rem]">
+            <section class="flex flex-col lg:flex-row items-center justify-around gap-y-10 lg:gap-y-0 w-full min-h-[35rem] px-[2rem] lg:px-[2.5rem] py-[2.5rem]">
+                <div class="flex flex-col gap-y-[2rem] lg:gap-y-[4rem] w-full lg:w-[40rem] mt-[2rem]">
+                    <h2 class="text-3xl xl:text-5xl font-inter font-bold leading-tight lg:leading-[3rem]">
                         Humanity's Outpost in Space
                     </h2>
     
-                    <p class="text-[1rem] font-public">
+                    <p class="text-sm sm:text-base font-public leading-6">
                         For over twenty years, the International Space Station has connected nations, inspired millions of people, and expanded humanity's understanding of life beyond Earth. It continues to shape the technologies and knowledge that will carry astronauts farther into the solar system.
                     </p>
                 </div>
 
-                <img src="assets/image/Humanity's-Outpost-in-Space.webp" alt="Humanity's-Outpost-in-Space" class="w-[47rem] h-[25rem]">
+                <img src="assets/image/Humanity's-Outpost-in-Space.webp" alt="Humanity's-Outpost-in-Space" class="w-full sm:w-[90%] lg:w-[47rem] h-auto lg:h-[25rem] object-cover rounded-[5px]">
             </section>
 
             <span id="Introduction"></span>
-            <section class="relative flex items-center justify-center w-full h-[40rem] bg-black">
-                <img src="assets/image/Introduction-Space-Station.jpg" alt="Introduction-Space-Station" class="absolute w-full h-[40rem]">
+            <section class="relative flex items-center justify-center w-full h-[80rem] lg:h-[50rem] xl:h-[35rem] bg-black">
+                <img src="assets/image/Introduction-Space-Station.jpg" alt="Introduction-Space-Station" class="absolute w-full h-[80rem] lg:h-[50rem] xl:h-[35rem] object-cover">
 
-                <div class="absolute w-full h-[25rem] grid grid-cols-3 grid-rows-2 gap-[1rem] px-[20rem] text-white">
-                    <div class="flex justify-center flex-col border-2 border-white rounded-xl px-[1.5rem] bg-black/50">
+                <div class="absolute w-full h-[70rem] lg:h-[40rem] xl:h-[25rem] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 xl:grid-rows-2 gap-[1rem] px-[2rem] xl:px-[10rem] text-white">
+                    <div class="flex justify-center flex-col border-2 border-white/80 rounded-[8px] px-[1.5rem] bg-black/50 backdrop-blur-[2px]">
                         <h4 class="pb-[2rem] font-inter font-bold text-xl">
                             Orbit Altitude — 408 km
                         </h4>
@@ -115,7 +119,7 @@
                             This low-Earth orbit supports scientific research and long-duration missions.
                         </p>
                     </div>
-                    <div class="flex justify-center flex-col border-2 border-white rounded-xl px-[1.5rem] bg-black/50">
+                    <div class="flex justify-center flex-col border-2 border-white/80 rounded-[8px] px-[1.5rem] bg-black/50 backdrop-blur-[2px]">
                         <h4 class="pb-[2rem] font-inter font-bold text-xl">
                             Orbital Speed — 7.66 km/s
                         </h4>
@@ -123,7 +127,7 @@
                             This high speed keeps the station in a stable orbit around Earth.
                         </p>
                     </div>
-                    <div class="flex justify-center flex-col border-2 border-white rounded-xl px-[1.5rem] bg-black/50">
+                    <div class="flex justify-center flex-col border-2 border-white/80 rounded-[8px] px-[1.5rem] bg-black/50 backdrop-blur-[2px]">
                         <h4 class="pb-[2rem] font-inter font-bold text-xl">
                             Orbit Duration — 90 Minutes
                         </h4>
@@ -131,7 +135,7 @@
                             As a result, astronauts can experience multiple sunrises and sunsets each day.
                         </p>
                     </div>
-                    <div class="flex justify-center flex-col border-2 border-white rounded-xl px-[1.5rem] bg-black/50">
+                    <div class="flex justify-center flex-col border-2 border-white/80 rounded-[8px] px-[1.5rem] bg-black/50 backdrop-blur-[2px]">
                         <h4 class="pb-[2rem] font-inter font-bold text-xl">
                             Crew Capacity — Up to 7 Astronauts
                         </h4>
@@ -139,7 +143,7 @@
                             This crew supports scientific experiments, maintenance, and daily station operations.
                         </p>
                     </div>
-                    <div class="flex justify-center flex-col border-2 border-white rounded-xl px-[1.5rem] bg-black/50">
+                    <div class="flex justify-center flex-col border-2 border-white/80 rounded-[8px] px-[1.5rem] bg-black/50 backdrop-blur-[2px]">
                         <h4 class="pb-[2rem] font-inter font-bold text-xl">
                             Mass — 419,725 kg
                         </h4>
@@ -147,7 +151,7 @@
                             This includes its modules, equipment, structural components, and onboard systems.
                         </p>
                     </div>
-                    <div class="flex justify-center flex-col border-2 border-white rounded-xl px-[1.5rem] bg-black/50">
+                    <div class="flex justify-center flex-col border-2 border-white/80 rounded-[8px] px-[1.5rem] bg-black/50 backdrop-blur-[2px]">
                         <h4 class="pb-[2rem] font-inter font-bold text-xl">
                             Length — 109 m
                         </h4>
@@ -159,27 +163,28 @@
             </section>
 
             <span id="Gallery"></span>
-            <section class="flex flex-col w-full h-[60rem] px-[8rem] py-[4rem]">
-                <h3 class="pb-[1rem] font-inter font-bold text-5xl">Gallery</h3>
+            <section class="flex flex-col w-full h-[100rem] md:h-[80rem] xl:h-[60rem] px-[2rem] xl:px-[8rem] py-[4rem]">
+                <h3 class="pb-[1rem] font-inter font-bold text-3xl xl:text-5xl">Gallery</h3>
 
                 <div class="flex gap-[0.5rem] pb-[5rem]">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="15" cy="9" r="2"/><path stroke-linecap="round" d="m20 17.6l-2.224-2a3 3 0 0 0-3.732-.225l-.298.21a2 2 0 0 1-2.564-.222l-4.29-4.29a2.3 2.3 0 0 0-3.14-.104L2.28 12.253"/><path stroke-linecap="round" d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="15" cy="9" r="2"/><path stroke-linecap="round" d="m20 17.6l-2.224-2a3 3 0 0 0-3.732-.225l-.298.21a2 2 0 0 1-2.564-.222l-4.29-4.29a2.3 2.3 0 0 0-3.14-.104L2.28 12.253"/><path stroke-linecap="round" d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg>
                     
-                    <span class="font-mono text-xl">10 Images</span>
+                    <span class="font-mono text-base xl:text-xl">10 Images</span>
                 </div>
 
-                <div class="grid grid-cols-5 grid-rows-3 gap-3 w-fuul h-[40rem]">
-                    <img src="assets/image/gallery/gallery1.webp" alt="Gallery-1" class="w-full h-full object-cover">
-                    <img src="assets/image/gallery/gallery2.webp" alt="Gallery-2" class="w-full h-full object-cover">
-                    <img src="assets/image/gallery/gallery3.webp" alt="Gallery-3" class="col-start-1 row-start-2 w-full h-full object-cover">
-                    <img src="assets/image/gallery/gallery4.webp" alt="Gallery-4" class="col-start-2 row-start-2 w-full h-full object-cover">
-                    <img src="assets/image/gallery/gallery5.jpg" alt="Gallery-5" class="col-start-1 row-start-3 w-full h-full object-cover">
-                    <img src="assets/image/gallery/gallery6.webp" alt="Gallery-6" class="col-start-2 row-start-3 w-full h-full object-cover">
-                    <img src="assets/image/gallery/gallery7.jpg" alt="Gallery-7" class="col-span-3 row-span-2 col-start-3 row-start-1 w-full h-full object-cover">
-                    <img src="assets/image/gallery/gallery8.jpg" alt="Gallery-8" class="row-start-3 w-full h-full object-cover">
-                    <img src="assets/image/gallery/gallery9.webp" alt="Gallery-9" class="row-start-3 w-full h-full object-cover">
-                    <img src="assets/image/gallery/gallery10.webp" alt="Gallery-10" class="row-start-3 w-full h-full object-cover">
+                <div class="grid grid-cols-2 grid-rows-6 md:grid-cols-3 md:grid-rows-5 xl:grid-cols-5 xl:grid-rows-3 gap-3 w-full h-[80rem] md:h-[60rem] xl:h-[40rem]">
+                    <img src="assets/image/gallery/gallery1.jpg" alt="Gallery-1" class="col-span-2 row-start-1 md:col-span-2 md:row-span-2 xl:col-span-1 xl:row-span-1 xl:col-start-1 xl:row-start-1 w-full h-full object-cover rounded-[5px]">
+                    <img src="assets/image/gallery/gallery2.jpg" alt="Gallery-2" class="row-start-2 md:col-start-3 md:row-start-1 xl:col-start-2 xl:row-start-1 w-full h-full object-cover rounded-[5px]">
+                    <img src="assets/image/gallery/gallery3.jpg" alt="Gallery-3" class="row-start-2 md:col-start-3 md:row-start-2 xl:col-span-1 xl:col-start-1 xl:row-start-2 w-full h-full object-cover rounded-[5px]">
+                    <img src="assets/image/gallery/gallery4.webp" alt="Gallery-4" class="md:col-start-1 md:row-start-3 xl:col-start-2 xl:row-start-2 w-full h-full object-cover rounded-[5px]">
+                    <img src="assets/image/gallery/gallery5.jpg" alt="Gallery-5" class="row-start-3 md:col-start-2 md:row-start-3 xl:col-start-1 xl:row-start-3 w-full h-full object-cover rounded-[5px]">
+                    <img src="assets/image/gallery/gallery6.jpg" alt="Gallery-6" class="col-span-2 row-start-4 md:col-span-1 md:col-start-3 md:row-start-3 xl:col-span-1 xl:col-start-2 xl:row-start-3 w-full h-full object-cover rounded-[5px]">
+                    <img src="assets/image/gallery/gallery7.jpg" alt="Gallery-7" class="row-start-5 md:col-start-1 md:row-start-4 xl:col-start-3 xl:row-start-1 xl:col-span-3 xl:row-span-2 w-full h-full object-cover rounded-[5px]">
+                    <img src="assets/image/gallery/gallery8.jpg" alt="Gallery-8" class="row-start-5 md:col-span-2 md:col-start-2 md:row-start-4 xl:col-span-1 xl:col-start-3 xl:row-start-3 w-full h-full object-cover rounded-[5px]">
+                    <img src="assets/image/gallery/gallery9.jpg" alt="Gallery-9" class="row-start-6 md:col-span-2 md:col-start-1 md:row-start-5 xl:col-span-1 xl:col-start-4 xl:row-start-3 w-full h-full object-cover rounded-[5px]">
+                    <img src="assets/image/gallery/gallery10.jpg" alt="Gallery-10" class="row-start-6 md:col-start-3 md:row-start-5 xl:col-span-1 xl:col-start-5 xl:row-start-3 w-full h-full object-cover rounded-[5px]">
                 </div>
+            </section>
         </main>
 
         <footer class="flex items-center justify-center w-full h-[5rem] bg-black">
