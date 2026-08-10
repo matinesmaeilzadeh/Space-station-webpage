@@ -42,5 +42,3 @@ This project was created to practice **HTML, Tailwind CSS, responsive design, CS
 ## 👨‍💻 Author
 
 **Matin Esmaeilzadeh**
-
-Built with ❤️ using HTML & Tailwind CSS.
